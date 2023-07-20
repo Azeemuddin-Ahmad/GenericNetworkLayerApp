@@ -10,12 +10,20 @@
 		2B3194BC2A67FFCA00A8472F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3194BB2A67FFCA00A8472F /* AppDelegate.swift */; };
 		2B3194BE2A67FFCA00A8472F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3194BD2A67FFCA00A8472F /* SceneDelegate.swift */; };
 		2B3194C02A67FFCA00A8472F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3194BF2A67FFCA00A8472F /* ViewController.swift */; };
-		2B3194C32A67FFCA00A8472F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B3194C12A67FFCA00A8472F /* Main.storyboard */; };
 		2B3194C52A67FFCB00A8472F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B3194C42A67FFCB00A8472F /* Assets.xcassets */; };
 		2B3194C82A67FFCB00A8472F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B3194C62A67FFCB00A8472F /* LaunchScreen.storyboard */; };
 		2B3194D32A67FFCC00A8472F /* GenericNetworkLayerAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3194D22A67FFCC00A8472F /* GenericNetworkLayerAppTests.swift */; };
 		2B3194DD2A67FFCC00A8472F /* GenericNetworkLayerAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3194DC2A67FFCC00A8472F /* GenericNetworkLayerAppUITests.swift */; };
 		2B3194DF2A67FFCC00A8472F /* GenericNetworkLayerAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3194DE2A67FFCC00A8472F /* GenericNetworkLayerAppUITestsLaunchTests.swift */; };
+		2B3194ED2A6808A800A8472F /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3194EC2A6808A800A8472F /* RequestBuilder.swift */; };
+		2B3194F02A680B6200A8472F /* ExampleRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3194EF2A680B6200A8472F /* ExampleRequest.swift */; };
+		2B3194F22A680E5200A8472F /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3194F12A680E5200A8472F /* NetworkService.swift */; };
+		2B3194F62A6843A500A8472F /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3194F52A6843A500A8472F /* ViewModel.swift */; };
+		2B3194F82A68441900A8472F /* ExampleResponseNM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3194F72A68441900A8472F /* ExampleResponseNM.swift */; };
+		2B3194FC2A684E7400A8472F /* ExampleRequestNM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3194FB2A684E7400A8472F /* ExampleRequestNM.swift */; };
+		2FA7709090B589D5444290EE /* Pods_GenericNetworkLayerApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC0131B3E0D227251E463DA4 /* Pods_GenericNetworkLayerApp.framework */; };
+		A6863CFA0C5F8D249DD8C2CE /* Pods_GenericNetworkLayerApp_GenericNetworkLayerAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DD9598DBD8CF923B255DDCC /* Pods_GenericNetworkLayerApp_GenericNetworkLayerAppUITests.framework */; };
+		CE9DB3E39667250288F48C84 /* Pods_GenericNetworkLayerAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 901F6C3D19ECA149591F2215 /* Pods_GenericNetworkLayerAppTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +48,6 @@
 		2B3194BB2A67FFCA00A8472F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B3194BD2A67FFCA00A8472F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		2B3194BF2A67FFCA00A8472F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2B3194C22A67FFCA00A8472F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2B3194C42A67FFCB00A8472F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B3194C72A67FFCB00A8472F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B3194C92A67FFCB00A8472F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +56,21 @@
 		2B3194D82A67FFCC00A8472F /* GenericNetworkLayerAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GenericNetworkLayerAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B3194DC2A67FFCC00A8472F /* GenericNetworkLayerAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericNetworkLayerAppUITests.swift; sourceTree = "<group>"; };
 		2B3194DE2A67FFCC00A8472F /* GenericNetworkLayerAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericNetworkLayerAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2B3194EC2A6808A800A8472F /* RequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
+		2B3194EF2A680B6200A8472F /* ExampleRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleRequest.swift; sourceTree = "<group>"; };
+		2B3194F12A680E5200A8472F /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		2B3194F52A6843A500A8472F /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		2B3194F72A68441900A8472F /* ExampleResponseNM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleResponseNM.swift; sourceTree = "<group>"; };
+		2B3194FB2A684E7400A8472F /* ExampleRequestNM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleRequestNM.swift; sourceTree = "<group>"; };
+		4DA249255C0995553F8B4885 /* Pods-GenericNetworkLayerAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GenericNetworkLayerAppTests.debug.xcconfig"; path = "Target Support Files/Pods-GenericNetworkLayerAppTests/Pods-GenericNetworkLayerAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		58225A89B6B56E64FFEFC9E1 /* Pods-GenericNetworkLayerAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GenericNetworkLayerAppTests.release.xcconfig"; path = "Target Support Files/Pods-GenericNetworkLayerAppTests/Pods-GenericNetworkLayerAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		6DD9598DBD8CF923B255DDCC /* Pods_GenericNetworkLayerApp_GenericNetworkLayerAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GenericNetworkLayerApp_GenericNetworkLayerAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		901F6C3D19ECA149591F2215 /* Pods_GenericNetworkLayerAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GenericNetworkLayerAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B19EE2ADA1D08C223225223C /* Pods-GenericNetworkLayerApp-GenericNetworkLayerAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GenericNetworkLayerApp-GenericNetworkLayerAppUITests.release.xcconfig"; path = "Target Support Files/Pods-GenericNetworkLayerApp-GenericNetworkLayerAppUITests/Pods-GenericNetworkLayerApp-GenericNetworkLayerAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BC0131B3E0D227251E463DA4 /* Pods_GenericNetworkLayerApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GenericNetworkLayerApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD99EA60174C72712D4733FC /* Pods-GenericNetworkLayerApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GenericNetworkLayerApp.release.xcconfig"; path = "Target Support Files/Pods-GenericNetworkLayerApp/Pods-GenericNetworkLayerApp.release.xcconfig"; sourceTree = "<group>"; };
+		D795B4AE8B06A04A8723E624 /* Pods-GenericNetworkLayerApp-GenericNetworkLayerAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GenericNetworkLayerApp-GenericNetworkLayerAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-GenericNetworkLayerApp-GenericNetworkLayerAppUITests/Pods-GenericNetworkLayerApp-GenericNetworkLayerAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F7F75F7BE3088324E2928305 /* Pods-GenericNetworkLayerApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GenericNetworkLayerApp.debug.xcconfig"; path = "Target Support Files/Pods-GenericNetworkLayerApp/Pods-GenericNetworkLayerApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FA7709090B589D5444290EE /* Pods_GenericNetworkLayerApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE9DB3E39667250288F48C84 /* Pods_GenericNetworkLayerAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6863CFA0C5F8D249DD8C2CE /* Pods_GenericNetworkLayerApp_GenericNetworkLayerAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +108,8 @@
 				2B3194D12A67FFCC00A8472F /* GenericNetworkLayerAppTests */,
 				2B3194DB2A67FFCC00A8472F /* GenericNetworkLayerAppUITests */,
 				2B3194B92A67FFCA00A8472F /* Products */,
+				44A0E0FB2EB6480AACF4386D /* Pods */,
+				666FA4D3EC5FA1193E390FA6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,10 +126,12 @@
 		2B3194BA2A67FFCA00A8472F /* GenericNetworkLayerApp */ = {
 			isa = PBXGroup;
 			children = (
+				2B3194EE2A680B4900A8472F /* Example */,
+				2B3194EB2A67FFDC00A8472F /* Network */,
 				2B3194BB2A67FFCA00A8472F /* AppDelegate.swift */,
 				2B3194BD2A67FFCA00A8472F /* SceneDelegate.swift */,
 				2B3194BF2A67FFCA00A8472F /* ViewController.swift */,
-				2B3194C12A67FFCA00A8472F /* Main.storyboard */,
+				2B3194F52A6843A500A8472F /* ViewModel.swift */,
 				2B3194C42A67FFCB00A8472F /* Assets.xcassets */,
 				2B3194C62A67FFCB00A8472F /* LaunchScreen.storyboard */,
 				2B3194C92A67FFCB00A8472F /* Info.plist */,
@@ -127,6 +156,48 @@
 			path = GenericNetworkLayerAppUITests;
 			sourceTree = "<group>";
 		};
+		2B3194EB2A67FFDC00A8472F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				2B3194EC2A6808A800A8472F /* RequestBuilder.swift */,
+				2B3194F12A680E5200A8472F /* NetworkService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		2B3194EE2A680B4900A8472F /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				2B3194EF2A680B6200A8472F /* ExampleRequest.swift */,
+				2B3194F72A68441900A8472F /* ExampleResponseNM.swift */,
+				2B3194FB2A684E7400A8472F /* ExampleRequestNM.swift */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
+		44A0E0FB2EB6480AACF4386D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F7F75F7BE3088324E2928305 /* Pods-GenericNetworkLayerApp.debug.xcconfig */,
+				BD99EA60174C72712D4733FC /* Pods-GenericNetworkLayerApp.release.xcconfig */,
+				D795B4AE8B06A04A8723E624 /* Pods-GenericNetworkLayerApp-GenericNetworkLayerAppUITests.debug.xcconfig */,
+				B19EE2ADA1D08C223225223C /* Pods-GenericNetworkLayerApp-GenericNetworkLayerAppUITests.release.xcconfig */,
+				4DA249255C0995553F8B4885 /* Pods-GenericNetworkLayerAppTests.debug.xcconfig */,
+				58225A89B6B56E64FFEFC9E1 /* Pods-GenericNetworkLayerAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		666FA4D3EC5FA1193E390FA6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BC0131B3E0D227251E463DA4 /* Pods_GenericNetworkLayerApp.framework */,
+				6DD9598DBD8CF923B255DDCC /* Pods_GenericNetworkLayerApp_GenericNetworkLayerAppUITests.framework */,
+				901F6C3D19ECA149591F2215 /* Pods_GenericNetworkLayerAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +205,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2B3194E22A67FFCC00A8472F /* Build configuration list for PBXNativeTarget "GenericNetworkLayerApp" */;
 			buildPhases = (
+				52925F8336C0B9FB07989E7A /* [CP] Check Pods Manifest.lock */,
 				2B3194B42A67FFCA00A8472F /* Sources */,
 				2B3194B52A67FFCA00A8472F /* Frameworks */,
 				2B3194B62A67FFCA00A8472F /* Resources */,
+				948508B411B70B87903FE889 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +224,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2B3194E52A67FFCC00A8472F /* Build configuration list for PBXNativeTarget "GenericNetworkLayerAppTests" */;
 			buildPhases = (
+				FA863DC2877855D0006250CF /* [CP] Check Pods Manifest.lock */,
 				2B3194CA2A67FFCC00A8472F /* Sources */,
 				2B3194CB2A67FFCC00A8472F /* Frameworks */,
 				2B3194CC2A67FFCC00A8472F /* Resources */,
@@ -169,9 +243,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2B3194E82A67FFCC00A8472F /* Build configuration list for PBXNativeTarget "GenericNetworkLayerAppUITests" */;
 			buildPhases = (
+				F4F17B2445713383624C9CEF /* [CP] Check Pods Manifest.lock */,
 				2B3194D42A67FFCC00A8472F /* Sources */,
 				2B3194D52A67FFCC00A8472F /* Frameworks */,
 				2B3194D62A67FFCC00A8472F /* Resources */,
+				FC497A7CB8E275282609965B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -233,7 +309,6 @@
 			files = (
 				2B3194C82A67FFCB00A8472F /* LaunchScreen.storyboard in Resources */,
 				2B3194C52A67FFCB00A8472F /* Assets.xcassets in Resources */,
-				2B3194C32A67FFCA00A8472F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +328,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		52925F8336C0B9FB07989E7A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GenericNetworkLayerApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		948508B411B70B87903FE889 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GenericNetworkLayerApp/Pods-GenericNetworkLayerApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GenericNetworkLayerApp/Pods-GenericNetworkLayerApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GenericNetworkLayerApp/Pods-GenericNetworkLayerApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4F17B2445713383624C9CEF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GenericNetworkLayerApp-GenericNetworkLayerAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA863DC2877855D0006250CF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GenericNetworkLayerAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC497A7CB8E275282609965B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GenericNetworkLayerApp-GenericNetworkLayerAppUITests/Pods-GenericNetworkLayerApp-GenericNetworkLayerAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GenericNetworkLayerApp-GenericNetworkLayerAppUITests/Pods-GenericNetworkLayerApp-GenericNetworkLayerAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GenericNetworkLayerApp-GenericNetworkLayerAppUITests/Pods-GenericNetworkLayerApp-GenericNetworkLayerAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2B3194B42A67FFCA00A8472F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -260,6 +438,12 @@
 			files = (
 				2B3194C02A67FFCA00A8472F /* ViewController.swift in Sources */,
 				2B3194BC2A67FFCA00A8472F /* AppDelegate.swift in Sources */,
+				2B3194ED2A6808A800A8472F /* RequestBuilder.swift in Sources */,
+				2B3194F02A680B6200A8472F /* ExampleRequest.swift in Sources */,
+				2B3194FC2A684E7400A8472F /* ExampleRequestNM.swift in Sources */,
+				2B3194F82A68441900A8472F /* ExampleResponseNM.swift in Sources */,
+				2B3194F22A680E5200A8472F /* NetworkService.swift in Sources */,
+				2B3194F62A6843A500A8472F /* ViewModel.swift in Sources */,
 				2B3194BE2A67FFCA00A8472F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,14 +481,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		2B3194C12A67FFCA00A8472F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2B3194C22A67FFCA00A8472F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		2B3194C62A67FFCB00A8472F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -432,6 +608,7 @@
 		};
 		2B3194E32A67FFCC00A8472F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7F75F7BE3088324E2928305 /* Pods-GenericNetworkLayerApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -442,7 +619,6 @@
 				INFOPLIST_FILE = GenericNetworkLayerApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -460,6 +636,7 @@
 		};
 		2B3194E42A67FFCC00A8472F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD99EA60174C72712D4733FC /* Pods-GenericNetworkLayerApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -470,7 +647,6 @@
 				INFOPLIST_FILE = GenericNetworkLayerApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -488,6 +664,7 @@
 		};
 		2B3194E62A67FFCC00A8472F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DA249255C0995553F8B4885 /* Pods-GenericNetworkLayerAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +685,7 @@
 		};
 		2B3194E72A67FFCC00A8472F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58225A89B6B56E64FFEFC9E1 /* Pods-GenericNetworkLayerAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -528,6 +706,7 @@
 		};
 		2B3194E92A67FFCC00A8472F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D795B4AE8B06A04A8723E624 /* Pods-GenericNetworkLayerApp-GenericNetworkLayerAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -546,6 +725,7 @@
 		};
 		2B3194EA2A67FFCC00A8472F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B19EE2ADA1D08C223225223C /* Pods-GenericNetworkLayerApp-GenericNetworkLayerAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

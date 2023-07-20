@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_GenericNetworkLayerApp_GenericNetworkLayerAppUITests : NSObject
+@end
+@implementation PodsDummy_Pods_GenericNetworkLayerApp_GenericNetworkLayerAppUITests
+@end
