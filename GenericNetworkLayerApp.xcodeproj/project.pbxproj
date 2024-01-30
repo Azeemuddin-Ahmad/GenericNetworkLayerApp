@@ -21,6 +21,7 @@
 		2B3194F62A6843A500A8472F /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3194F52A6843A500A8472F /* ViewModel.swift */; };
 		2B3194F82A68441900A8472F /* ExampleResponseNM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3194F72A68441900A8472F /* ExampleResponseNM.swift */; };
 		2B3194FC2A684E7400A8472F /* ExampleRequestNM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3194FB2A684E7400A8472F /* ExampleRequestNM.swift */; };
+		2BDF8BE42B693C3A003E6DC4 /* Respository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDF8BE32B693C39003E6DC4 /* Respository.swift */; };
 		2FA7709090B589D5444290EE /* Pods_GenericNetworkLayerApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC0131B3E0D227251E463DA4 /* Pods_GenericNetworkLayerApp.framework */; };
 		A6863CFA0C5F8D249DD8C2CE /* Pods_GenericNetworkLayerApp_GenericNetworkLayerAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DD9598DBD8CF923B255DDCC /* Pods_GenericNetworkLayerApp_GenericNetworkLayerAppUITests.framework */; };
 		CE9DB3E39667250288F48C84 /* Pods_GenericNetworkLayerAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 901F6C3D19ECA149591F2215 /* Pods_GenericNetworkLayerAppTests.framework */; };
@@ -62,6 +63,7 @@
 		2B3194F52A6843A500A8472F /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		2B3194F72A68441900A8472F /* ExampleResponseNM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleResponseNM.swift; sourceTree = "<group>"; };
 		2B3194FB2A684E7400A8472F /* ExampleRequestNM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleRequestNM.swift; sourceTree = "<group>"; };
+		2BDF8BE32B693C39003E6DC4 /* Respository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Respository.swift; sourceTree = "<group>"; };
 		4DA249255C0995553F8B4885 /* Pods-GenericNetworkLayerAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GenericNetworkLayerAppTests.debug.xcconfig"; path = "Target Support Files/Pods-GenericNetworkLayerAppTests/Pods-GenericNetworkLayerAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		58225A89B6B56E64FFEFC9E1 /* Pods-GenericNetworkLayerAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GenericNetworkLayerAppTests.release.xcconfig"; path = "Target Support Files/Pods-GenericNetworkLayerAppTests/Pods-GenericNetworkLayerAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		6DD9598DBD8CF923B255DDCC /* Pods_GenericNetworkLayerApp_GenericNetworkLayerAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GenericNetworkLayerApp_GenericNetworkLayerAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -159,6 +161,7 @@
 		2B3194EB2A67FFDC00A8472F /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				2BDF8BE32B693C39003E6DC4 /* Respository.swift */,
 				2B3194EC2A6808A800A8472F /* RequestBuilder.swift */,
 				2B3194F12A680E5200A8472F /* NetworkService.swift */,
 			);
@@ -439,6 +442,7 @@
 				2B3194C02A67FFCA00A8472F /* ViewController.swift in Sources */,
 				2B3194BC2A67FFCA00A8472F /* AppDelegate.swift in Sources */,
 				2B3194ED2A6808A800A8472F /* RequestBuilder.swift in Sources */,
+				2BDF8BE42B693C3A003E6DC4 /* Respository.swift in Sources */,
 				2B3194F02A680B6200A8472F /* ExampleRequest.swift in Sources */,
 				2B3194FC2A684E7400A8472F /* ExampleRequestNM.swift in Sources */,
 				2B3194F82A68441900A8472F /* ExampleResponseNM.swift in Sources */,

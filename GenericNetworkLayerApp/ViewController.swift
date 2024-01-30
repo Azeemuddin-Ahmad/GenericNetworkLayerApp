@@ -14,7 +14,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        viewModel?.makeRequest()
+        viewModel?.makeRequestWithCombine()
+//        viewModel?.makeRequestWithAsyncAwait()
+//        viewModel?.makeRequestWithCompletion()
     }
 
 

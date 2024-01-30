@@ -9,15 +9,15 @@ import Foundation
 import Combine
 
 final class ViewModel {
-    private var networkService: NetworkService
+    private var repository: Repository
     private var subscriptions: [AnyCancellable] = []
     
-    init(networkService: NetworkService) {
-        self.networkService = networkService
+    init(repository: Repository) {
+        self.repository = repository
     }
     
-    func makeRequest() {
-        networkService.searchUsers(page: "0", perPageLimit: "9", searchQuery: "test").sink { completion in
+    func makeRequestWithCombine() {
+        repository.searchUsers(page: "0", perPageLimit: "9", searchQuery: "test").sink { completion in
             switch completion {
             case .finished:
                 break
@@ -28,5 +28,28 @@ final class ViewModel {
         } receiveValue: { response in
             print("Future Response: \(response)")
         }.store(in: &subscriptions)
+    }
+    
+    func makeRequestWithAsyncAwait() {
+        Task.init {
+            do {
+                let response = try await repository.searchUsers(page: "0", perPageLimit: "9", searchQuery: "test")
+                print("Async Response: \(response)")
+            } catch {
+                // .. handle error
+            }
+        }
+    }
+    
+    func makeRequestWithCompletion() {
+        repository.searchUsers(page: "0", perPageLimit: "9", searchQuery: "test") { result in
+            switch result {
+            case .success(let success):
+                print("Response: \(success)")
+                
+            case .failure(let failure):
+                print("Response: \(failure)")
+            }
+        }
     }
 }

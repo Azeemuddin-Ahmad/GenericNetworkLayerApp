@@ -22,7 +22,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.windowScene = windowScene
         window?.makeKeyAndVisible()
         let vc = ViewController()
-        vc.viewModel = ViewModel(networkService: NetworkService())
+        vc.viewModel = ViewModel(repository: Repository())
         window?.rootViewController = vc
     }
 

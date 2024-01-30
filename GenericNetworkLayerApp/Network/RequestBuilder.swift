@@ -22,12 +22,12 @@ protocol RequestBuilderProtocol: URLRequestConvertible {
 extension RequestBuilderProtocol {
     
     var requestURL: URL {
-        baseURL.appending(path: endPoint)
+        return baseURL.appendingPathComponent(endPoint)
     }
     
-    var params: [String: Any]? {
-        return nil
-    }
+//    var params: [String: Any]? {
+//        return nil
+//    }
     
     var headers: HTTPHeaders {
         return defaultJSONHeaders()

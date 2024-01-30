@@ -9,85 +9,46 @@ import Foundation
 import Alamofire
 import Combine
 
-protocol NetworkServiceProtocol {
-    func performRequest<T: Codable>(_ request: RequestBuilderProtocol, responseModel: T.Type) -> AnyPublisher<T, AFError>
+enum APIError: Error {
+    // Your custom error cases here
+    case requestFailed
 }
 
-extension NetworkServiceProtocol {
+/// A protocol representing a service that handles networking operations.
+protocol NetworkService {
+    func performRequest<T: Codable>(_ request: RequestBuilderProtocol, responseModel: T.Type) -> AnyPublisher<T, AFError>
+    
+    func performDownloadRequest(_ url: URL, fileName: String) -> AnyPublisher<Data, AFError>
+}
+
+extension NetworkService {
     
     func performRequest<T: Codable>(_ request: RequestBuilderProtocol, responseModel: T.Type) -> AnyPublisher<T, AFError> {
-        let requestPublisher = AF.request(request).publishDecodable(type: T.self)
+        let requestPublisher = AF.request(request).validate().publishDecodable(type: T.self)
         
         return requestPublisher.value().mapError { error in
             return error
         }.eraseToAnyPublisher()
-
-//            return Future<T, AFError> { promise in
-//                let cancellable = requestPublisher.sink(receiveCompletion: { completion in
-//                    switch completion {
-//                    case .finished:
-//                        break // Not needed, since Future will automatically complete when the sink is deallocated
-//                    case .failure(let error):
-//                        print("Error: \(error)")
-//                        promise(.failure(error.asAFError(orFailWith: "Unable to cast to AFError")))
-////                        promise(.failure(error))
-//                    }
-//                }, receiveValue: { result in
-//                    print("Result: \(result)")
-//                    if let value = result.value {
-//                        print("Result: \(value)")
-//                        promise(.success(value))
-//                    } else if let error = result.error {
-//                        print("Error: \(error)")
-//                        promise(.failure(error))
-//                    }
-//                })
-//            }
+    }
+    
+    func performDownloadRequest(_ url: URL, fileName: String) -> AnyPublisher<Data, AFError> {
+        let downloadsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
+        let downloadDir = downloadsURL.appendingPathComponent("\(fileName).m3u8")
+        
+        let requestPublisher = AF.download(url, to: { _, _ in
+            return (downloadDir, [.removePreviousFile])
+        }).validate().downloadProgress { progress in
+            print("Progress: \(progress)")
+        }.publishData()
         
         
-//        return Future<T, AFError> { promise in
-//            let request = AF.request(request)
-//            let requestPublisher = request.publishDecodable(type: T.self)
-//            let a = requestPublisher.sink { result in
-//                if let value = result.value {
-//                    print("Result: \(value)")
-//                    promise(.success(value))
-//                } else if let error = result.error {
-//                    print("Error: \(error)")
-//                    promise(.failure(error))
-//                }
-//            }
-//        }
+        return requestPublisher.value().mapError { error in
+            return error
+        }.eraseToAnyPublisher()
     }
 }
 
-final class NetworkService: NetworkServiceProtocol {
-    
-    var subscriptions = [AnyCancellable]()
-    
-    func searchUsers(page: String, perPageLimit: String, searchQuery: String) -> Future<ExampleResponseNM, AFError> {
-        let request = ExampleRequest(requestNM: ExampleRequestNM(page: page, perPageLimit: perPageLimit, searchQuery: searchQuery))
-        
-        return Future<ExampleResponseNM, AFError> { [weak self] promise in
-            guard let strongSelf = self else {
-//                promise(.failure(.explicitlyCancelled))
-                return
-            }
-            strongSelf.performRequest(request, responseModel: ExampleResponseNM.self).sink { completion in
-                switch completion {
-                case .finished:
-                    break
-                    
-                case .failure(let error):
-                    print("Error: \(error)")
-                    promise(.failure(error))
-                }
-            } receiveValue: { response in
-                print("Response: \(response)")
-                promise(.success(response))
-                
-            }.store(in: &strongSelf.subscriptions)
-        }
-    }
-}
+/// A protocol representing a service that handles caching operations.
+protocol CacheService { }
+
 
